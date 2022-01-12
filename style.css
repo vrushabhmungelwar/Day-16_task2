@@ -1,0 +1,88 @@
+.required:after {
+  content: " *";
+  color: red;
+}
+.txt-center {
+  text-align: center;
+}
+.hide {
+  display: none;
+}
+
+.clear {
+  float: none;
+  clear: both;
+}
+
+.rating {
+  width: 90px;
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  text-align: center;
+  position: relative;
+}
+
+.rating > label {
+  float: right;
+  display: inline;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  width: 1.1em;
+  cursor: pointer;
+  color: #000;
+}
+
+.rating > label:hover,
+.rating > label:hover ~ label,
+.rating > input.radio-btn:checked ~ label {
+  color: transparent;
+}
+
+.rating > label:hover:before,
+.rating > label:hover ~ label:before,
+.rating > input.radio-btn:checked ~ label:before,
+.rating > input.radio-btn:checked ~ label:before {
+  content: "\2605";
+  position: absolute;
+  left: 0;
+  color: #ffd700;
+}
+
+/* table, th, td {
+border: 1px solid black;
+border-collapse: collapse;
+} */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(220, 228, 220);
+}
+table {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+textarea {
+  min-width: 95%;
+}
+.full-name {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.last-name {
+  margin-top: 19px;
+  padding-left: 5px;
+}
